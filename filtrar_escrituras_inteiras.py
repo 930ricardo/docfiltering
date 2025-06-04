@@ -38,8 +38,6 @@ def main():
     if not palavras:
         print("Nenhuma palavra-chave informada. Abortando.")
         return
-
-    # Monta o padrão regex com as palavras informadas
     palavras_lista = [p.strip() for p in palavras.split(",") if p.strip()]
     pattern = re.compile(r"\b(" + "|".join(map(re.escape, palavras_lista)) + r")\b", re.IGNORECASE)
 
@@ -105,7 +103,6 @@ def main():
             new_pdf.close()
             doc.close()
 
-    # Log único para todos os PDFs
     log_path = os.path.join(output_dir, 'log.csv')
     with open(log_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
