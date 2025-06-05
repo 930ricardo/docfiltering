@@ -79,6 +79,6 @@ O arquivo `log.csv` conterá:
 
 * O script NÃO altera os arquivos originais.
 * Em caso de erro ao abrir, ler ou salvar algum PDF/página, o erro será detalhado no log.
-* Ideal para volumes médios de PDFs (pode ser limitado por memória para PDFs muito grandes já testei com PDF's de 40k páginas e funcionou perfeitamente) 
+* Ideal para volumes médios de PDFs pode ser limitado por memória para PDFs muito grandes já testei com PDF's de 40k páginas e funcionou perfeitamente 
 
 
